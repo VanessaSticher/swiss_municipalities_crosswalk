@@ -1,8 +1,10 @@
 # swiss-municipalities-crosswalk: Crosswalk for Swiss municipalities
 
 Crosswalk for Swiss municipality names over time (back to 1948)
+
 Data from: https://www.agvchapp.bfs.admin.ch/de/home
-(only name changes, not pure changes of borders)
+
+Limitations: only name changes, not pure changes of borders
 
 ## Getting Started
 
