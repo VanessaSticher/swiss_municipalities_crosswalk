@@ -16,9 +16,9 @@ Install from Github using pip:
     pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
     ```
 
-2. Clone the repo
+Install from Github using pip:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
    ```    
 
 
