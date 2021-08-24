@@ -12,11 +12,6 @@ Limitations: only name changes, not pure changes of borders
 
 ### Installation
 Install from Github using pip:
-    ```sh
-    pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
-    ```
-
-Install from Github using pip:
    ```sh
    pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
    ```    
