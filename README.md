@@ -10,6 +10,10 @@ Limitations: only name changes, not pure changes of borders
 
 ### Prerequisites
 
+### Installation
+Install from Github using pip:
+  pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
+
 
 
 ## Usage
