@@ -9,8 +9,7 @@ setup(
     # the name must match the folder name 'verysimplemodule'
     name="create_crosswalk",
     version=VERSION,
-    author="Vanessa",
-    #author_email="<vsticher2@gmail.com>",
+    author="Vanessa Sticher",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
