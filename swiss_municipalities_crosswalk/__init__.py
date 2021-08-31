@@ -1,0 +1,1 @@
+from swiss_municipalities_crosswalk import create_crosswalk
