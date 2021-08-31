@@ -26,16 +26,22 @@ Imagine you have a dataset with Swiss municipalities in a given year, e.g. a mun
 
 | Municipality (in 1950) | Canton (in 1950) | Population |
 | ---------------------- | -----------------|:----------:|
-| Adliswil               | ZH               |     16,368 |
-| Beinwil (SO)           | SO               |        325 |
-| Cham                   | ZG               |       9359 |
+| Arzier                 | VD               |        ... |
+| Biel (BE)              | BE               |        ... |
+| Cumbels                | GR               |        ... |
 | ...                    | ...              |        ... |
 
 You can then create a crosswalk between the municipality names on January 1, 1950 and any desired year, e.g. January 1, 2019:
-```
-create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
-```
-
+   ```
+   create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
+   ```
+The resulting crosswalk contains the old municipality names (January 1, 1950) and the new municipality names (January 1, 2019) (and a few other variables):
+| old_canton | old_municipality | new canton | new_municipality | ... |
+| -----------| -----------------|:----------:| ---------------- | ... |
+| VD         | Arzier           |         VD | Arzier-Le Muids  | ... |
+| BE         | Biel (BE)        |         BE | Biel/Bienne      | ... |
+| GR         | Cumbels          |         GR | Cumbel           | ... |
+| ...        | ...              |        ... | ...              | ... |
 
 
 ### Use your crosswalk file
