@@ -36,6 +36,7 @@ You can then create a crosswalk between the municipality names on January 1, 195
    create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
    ```
 The resulting crosswalk contains the old municipality names (January 1, 1950) and the new municipality names (January 1, 2019) (and a few other variables):
+
 | old_canton | old_municipality | new canton | new_municipality | ... |
 | -----------| -----------------|:----------:| ---------------- | ... |
 | VD         | Arzier           |         VD | Arzier-Le Muids  | ... |
