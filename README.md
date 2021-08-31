@@ -8,11 +8,11 @@ This package provides code to map Swiss municipality (_Gemeinde_) names across t
 ### Prerequisites
 
 ### Installation
-Install from Github using pip:
+Installation from Github using pip:
    ```sh
    pip install https://github.com/VanessaSticher/swiss-municipalities-crosswalk/master
    ```    
-
+Installation from PyPi:
 
 
 ## Usage
@@ -31,9 +31,11 @@ Imagine you have a dataset with Swiss municipalities in a given year, e.g. a mun
 | Cumbels                | GR               |        ... |
 | ...                    | ...              |        ... |
 
-You can then create a crosswalk between the municipality names on January 1, 1950 and any desired year, e.g. January 1, 2019:
-   ```
-   create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
+You can then create a crosswalk file between the municipality names on January 1, 1950 and any desired year, e.g. January 1, 2019:
+   ```python
+   create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv", store_path="home/projectfolder") # export file to .csv
+   crosswalk_df = create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="Pandas") # file as Pandas dataframe
+   
    ```
 The resulting crosswalk contains the old municipality names (January 1, 1950) and the new municipality names (January 1, 2019) (and a few other variables):
 
