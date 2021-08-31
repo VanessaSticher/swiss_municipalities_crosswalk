@@ -47,6 +47,5 @@ The resulting crosswalk contains the old municipality names (January 1, 1950) an
 | ...        | ...              |        ... | ...              | ... |
 
 
-### Use your crosswalk file
-Crosswalk file has x columns: municipality_old, municipalityYEAR, IDs?
-
+### Future applications: add column with new municipality names to Pandas dataframe
+This function is not ready yet.
