@@ -22,14 +22,19 @@ Install from Github using pip:
 ### Create custom crosswalk file
 The function `swiss_municipaliy_crosswalk.create_crosswalk()` creates a custom crosswalk file for municipality names between two dates. The file can be exported to a comma-separated values file (.csv), a Stata data file (.dta), or stored as a Pandas dataframe.
 #### Example
-Imagine you have a dataset with historical 
+Imagine you have a dataset with Swiss municipalities in a given year, e.g. a municipality-level dataset with population on January 1, 1950:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Municipality (in 1950) | Canton (in 1950) | Population |
+| ---------------------- | -----------------|:----------:|
+| Adliswil               | ZH               |     16,368 |
+| Beinwil (SO)           | SO               |        325 |
+| Cham                   | ZG               |       9359 |
+| ...                    | ...              |        ... |
 
+You can then create a crosswalk between the municipality names on January 1, 1950 and any desired year, e.g. January 1, 2019:
+```
+create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
+'''
 
 
 
