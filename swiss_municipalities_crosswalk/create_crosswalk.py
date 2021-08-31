@@ -12,7 +12,7 @@ import pandas as pd
 import requests
 import warnings
 from datetime import datetime
-
+ 
 '''
 Required input:
 - date_since: date as string in US date format (mm/dd/yyyy), e.g. '12/31/2019'
