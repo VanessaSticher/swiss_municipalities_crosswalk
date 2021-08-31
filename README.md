@@ -34,7 +34,7 @@ Imagine you have a dataset with Swiss municipalities in a given year, e.g. a mun
 You can then create a crosswalk between the municipality names on January 1, 1950 and any desired year, e.g. January 1, 2019:
 ```
 create_crosswalk(date_from="01/01/1950", date_to=", cantons="all", output_format="csv")
-'''
+```
 
 
 
