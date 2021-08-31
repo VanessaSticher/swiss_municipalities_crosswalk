@@ -1,10 +1,7 @@
 # swiss-municipalities-crosswalk: Crosswalk for Swiss municipalities
 
-Crosswalk for Swiss municipality names over time (back to 1948)
+This package provides code to map Swiss municipality (_Gemeinde_) names across time (back to 1948). The information about the changes in names of municipalities is retrieved from the official website of the Swiss Federal Statistical Office (https://www.agvchapp.bfs.admin.ch/de/home; available in German, French, and Italian). Note that this code only maps names of municipalities over time, not borders.
 
-Data from: https://www.agvchapp.bfs.admin.ch/de/home
-
-Limitations: only name changes, not pure changes of borders
 
 ## Getting Started
 
@@ -20,8 +17,19 @@ Install from Github using pip:
 
 ## Usage
 
-### Create your crosswalk file
-Run the python code
+### Create file with changes
+
+### Create custom crosswalk file
+The function `swiss_municipaliy_crosswalk.create_crosswalk()` creates a custom crosswalk file for municipality names between two dates. The file can be exported to a comma-separated values file (.csv), a Stata data file (.dta), or stored as a Pandas dataframe.
+#### Example
+Imagine you have a dataset with historical 
+```
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+'''
 
 ### Use your crosswalk file
 Crosswalk file has x columns: municipality_old, municipalityYEAR, IDs?
