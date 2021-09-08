@@ -12,7 +12,7 @@ import pandas as pd
 import requests
 import warnings
 from datetime import datetime
- 
+
 '''
 Required input:
 - date_since: date as string in US date format (mm/dd/yyyy), e.g. '12/31/2019'
@@ -179,6 +179,9 @@ def create_crosswalk(date_since, date_to, cantons='all', output_format="Pandas",
         date2 = 'change_date' + str(i + 1)
         df_left.loc[(df_left[date2] < df_left[date1]), newvars] = np.nan
 
+        # Delete first change if appended somewhere
+        df_left = df_left[~df_left['change_nr1'].isin(df_left['change_nr' + str(i + 1)])]
+
         # Count number of changes and increase counter
         changes = len(df_left['change_date' + str(i + 1)].dropna())
         i = i + 1
@@ -250,8 +253,3 @@ def create_crosswalk(date_since, date_to, cantons='all', output_format="Pandas",
         return df_final
     else:
         raise ValueError("Invalid output format. Select one of: csv, Stata, Pandas")
-
-
-
-
-mydf = create_crosswalk(date_since="01/01/1940", date_to="08/31/2021", cantons='all', output_format="Pandas")
