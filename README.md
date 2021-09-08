@@ -21,6 +21,7 @@ Installation from PyPi:
 
 ### Create custom crosswalk file
 The function `swiss_municipaliy_crosswalk.create_crosswalk()` creates a custom crosswalk file for municipality names between two dates. The file can be exported to a comma-separated values file (.csv), a Stata data file (.dta), or stored as a Pandas dataframe.
+Note that the crosswalk files can have duplicate values for both the old and new municipality name. Duplicates in old municipality names are a result of municipalities splitting. Duplicates in new municipalities names result from consolidation.
 #### Example
 Imagine you have a dataset with Swiss municipalities in a given year, e.g. a municipality-level dataset with population on January 1, 1950:
 
@@ -47,5 +48,5 @@ The resulting crosswalk contains the old municipality names (January 1, 1950) an
 | ...        | ...              |        ... | ...              | ... |
 
 
-### Future applications: add column with new municipality names to Pandas dataframe
-This function is not ready yet.
+### Future Adjustments
+- Add column with new municipality names to Pandas dataframe
