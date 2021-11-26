@@ -6,10 +6,12 @@ This package provides code to map Swiss municipality (_Gemeinde_) names across t
 ## Installation
 Installation using pip:
    ```sh
+   pip install --upgrade https://github.com/VanessaSticher/swiss_municipalities_crosswalk/main
+   ```    
+Installation using pip:
+   ```sh
    pip install swiss_municipalities_crosswalk
    ```    
-Installation from PyPi:
-
 
 ## Usage
 ### Create custom crosswalk file
