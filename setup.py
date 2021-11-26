@@ -16,7 +16,7 @@ setup(
     install_requires=[
         "pandas>=1.1.5",
         "numpy>=1.20.3",
-        "pandas=>1.1.5",
+        "pandas>=1.1.5",
         "requests>=2.25.1",
     ],
     keywords=['Swiss municipalities', 'crosswalk'],
